@@ -51,14 +51,14 @@ function check() {
 
   for (pos of positions) {
     if (pos.every((item) => items.includes(item))) {
-      alert("Fim de jogo! Vitória do jogador '" + playerLastMove + "'");
+      alert("Fim de jogo!\nVitória do jogador '" + playerLastMove + "'");
       init();
       return;
     }
   }
 
   if (selected.filter((item) => item).length === 9) {
-    alert("Fim de jogo! Deu velha");
+    alert("Fim de jogo!\nDeu velha");
     init();
     return;
   }
